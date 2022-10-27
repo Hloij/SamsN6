@@ -1,0 +1,38 @@
+﻿<Window x:Class="SamsN6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SamsN6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="431" Width="358">
+    <Grid>
+        <ListBox x:Name="ListZnach" Margin="205,10,10,143"/>
+        <GroupBox Header="Ввод переменных" Margin="0,0,158,0">
+            <Grid>
+                <Label Content="b" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="20"/>
+                <TextBox x:Name="B" HorizontalAlignment="Left" Margin="10,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="c" HorizontalAlignment="Left" Margin="12,59,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="C" HorizontalAlignment="Left" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+                <GroupBox Header="Ввод диапозона Х" Margin="0,160,0,75">
+                    <Grid>
+                        <Label Content="От" HorizontalAlignment="Left" Margin="4,0,0,80" VerticalAlignment="Bottom"/>
+                        <TextBox x:Name="DiapStart" HorizontalAlignment="Left" Margin="7,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                        <Label Content="Шаг" HorizontalAlignment="Left" Margin="4,0,0,31" VerticalAlignment="Bottom"/>
+                        <TextBox x:Name="DiapShag" HorizontalAlignment="Left" Margin="7,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    </Grid>
+                </GroupBox>
+                <Label Content="Конечное значение x" HorizontalAlignment="Left" Margin="0,300,0,0" VerticalAlignment="Top" Width="176"/>
+                <TextBox x:Name="LastY" HorizontalAlignment="Center" Margin="0,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="a" HorizontalAlignment="Left" Margin="12,108,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="A" HorizontalAlignment="Left" Margin="10,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+            </Grid>
+        </GroupBox>
+        <Button Content="Решить" Click="Button_Click" HorizontalAlignment="Left" Height="32" Margin="235,323,0,0" VerticalAlignment="Top" Width="84"/>
+        <CheckBox x:Name="Checkerf1" IsChecked="False" Checked="Check" Content="F1" HorizontalAlignment="Left" Margin="252,283,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="Checkerf2" IsChecked="True" Checked="Check" Content="F2" HorizontalAlignment="Left" Margin="252,303,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
